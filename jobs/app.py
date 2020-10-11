@@ -1,8 +1,8 @@
-import Flask
-from Flask import render_template
+import flask
 
-app = Flask(__name__)
 
-@route
+app = flask.r
+
+
 def jobs():
     return render_template("index.html")
