@@ -1,10 +1,11 @@
-from Flask import flask
+from flask import Flask
+from flask import render_template
 
 
 
 
-# app = flask.r
-#
-#
-# def jobs():
-#     return render_template("index.html")
+app = Flask(__name__)
+
+@app.route('/')
+def jobs():
+    return render_template("index.html")
